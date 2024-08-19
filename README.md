@@ -26,7 +26,7 @@ This project is a clone of the Netflix India landing page, designed to replicate
    ```bash
    cd netflix-india-clone
 
-3. Open the **index.html** file in your preferred web browser.
+3. Open the `index.html` file in your preferred web browser.
 
 ## File Structure
 - `index.html` - The main landing page.
