@@ -634,7 +634,7 @@ nav button {
 /* Responsive design*/
 
 /* Add media querries for max-width:1024px */
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     /* First Section - Responsive */
     .first .box-empty {
@@ -776,7 +776,7 @@ nav button {
 }
 
 /* Add media querries for max-width:768px */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     /* First Section - Responsive */
     .first .box-empty {
@@ -907,7 +907,7 @@ nav button {
 }
 
 /* Add media querries for max-width:430px */
-@media (max-width: 430px) {
+@media only screen and (max-width: 430px) {
 
     /* First Section - Responsive */
     .first .box-empty {
