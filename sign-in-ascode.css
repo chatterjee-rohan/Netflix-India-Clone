@@ -407,3 +407,183 @@ input[type="checkbox"]:checked::before {
     cursor: pointer;
     text-decoration: underline;
 }
+
+/* Responsive design*/
+
+/* Add media querries for max-width:1024px */
+
+@media only screen and (max-width: 1024px) {
+
+    /* First Section - Responsive */
+    nav {
+        max-width: 80vw;
+        margin-left: 3vw;
+        height: 12vh;
+    }
+
+    .netflix-logo {
+        width: 140px;
+    }
+
+    .container {
+        width: 65vw;
+        height: auto;
+        padding-left: 50px;
+        padding-right: 20px;
+    }
+
+    #email {
+        height: 8vh;
+        width: 60vw;
+    }
+
+    .btn-si-red,
+    .btn-si-code {
+        width: 60vw;
+        height: 7vh;
+    }
+
+    .btn-si-red {
+        font-size: 15px;
+    }
+
+    .or {
+        padding-right: 30px;
+    }
+
+    .fp {
+        padding-right: 20px;
+    }
+
+    /* Last Section - Responsive */
+    .last {
+        margin: 55px 50px 45px 25px;
+        padding: 56vh 9vw 0px 0px;
+    }
+
+    .lastsection-text-boxes {
+        flex-direction: column;
+        gap: 8px;
+        margin: 18px 35px 18px 0px;
+    }
+}
+
+/* Add media querries for max-width:768px */
+
+@media only screen and (max-width: 768px) {
+
+    /* First Section - Responsive */
+    nav {
+        max-width: 85vw;
+        margin-left: 2vw;
+        height: 11vh;
+    }
+
+    .netflix-logo {
+        width: 120px;
+    }
+
+    .container {
+        width: 75vw;
+        height: auto;
+        padding-left: 40px;
+        padding-right: 15px;
+    }
+
+    #email {
+        height: 7.5vh;
+        width: 70vw;
+    }
+
+    .btn-si-red,
+    .btn-si-code {
+        width: 70vw;
+        height: 6.5vh;
+    }
+
+    .btn-si-red {
+        font-size: 14px;
+    }
+
+    .or {
+        padding-right: 25px;
+    }
+
+    .fp {
+        padding-right: 15px;
+    }
+
+    /* Last Section - Responsive */
+    .last {
+        margin: 50px 40px 40px 20px;
+        padding: 54vh 8vw 0px 0px;
+    }
+
+    .lastsection-text-boxes {
+        flex-direction: column;
+        gap: 10px;
+        margin: 15px 30px 15px 0px;
+    }
+}
+
+/* Add media querries for max-width:450px */
+
+@media only screen and (max-width: 450px) {
+
+    /* First Section - Responsive */
+    nav {
+        max-width: 90vw;
+        margin-left: 2vw;
+        height: 10vh;
+    }
+
+    .netflix-logo {
+        width: 90px;
+    }
+
+    .first {
+        height: 90vh;
+    }
+
+    .container {
+        width: 90vw;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    #email {
+        height: 6.5vh;
+        width: 80vw;
+    }
+
+    .btn-si-red,
+    .btn-si-code {
+        width: 80vw;
+        height: 6vh;
+    }
+
+    .btn-si-red {
+        font-size: 12px;
+    }
+
+    .or {
+        padding-right: 15px;
+    }
+
+    .fp {
+        padding-right: 10px;
+    }
+
+    /* Last Section - Responsive */
+    .last {
+        margin: 30px 20px 20px 10px;
+        padding: 45vh 5vw 0px 0px;
+    }
+
+    .lastsection-text-boxes {
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 15px 10px 0px;
+    }
+}
