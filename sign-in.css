@@ -413,7 +413,7 @@ input[type="checkbox"]:checked::before {
 
 /* Add media querries for max-width:1024px */
 
-@media (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     /* First Section - Responsive */
     nav {
@@ -487,7 +487,7 @@ input[type="checkbox"]:checked::before {
 
 /* Add media querries for max-width:768px */
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
     /* First Section - Responsive */
     nav {
@@ -561,7 +561,7 @@ input[type="checkbox"]:checked::before {
 
 /* Add media querries for max-width:430px */
 
-@media (max-width: 430px) {
+@media only screen and (max-width: 430px) {
 
     /* First Section - Responsive */
     nav {
