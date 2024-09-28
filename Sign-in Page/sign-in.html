@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+
+<body>
+    <section class="first">
+        <nav>
+            <span>
+                <a href="index.html">
+                    <img src="assets/image/logo-nav.svg" alt="Netflix-Logo" class="netflix-logo">
+                </a>
+            </span>
+        </nav>
+        <div class="box-empty"></div>
+        <div class="container">
+            <p class="si">Sign In</p>
+            <div class="input-boxes">
+                <input type="text" placeholder="Email or mobile number" id="email">
+                <input type="text" placeholder="Password" id="password">
+            </div>
+            <div class="btn-si">
+                <button class="btn-si-red">Sign In</button>
+            </div>
+            <p class="or">OR</p>
+            <div class="btn-si">
+                <button class="btn-si-code">
+                    <a href="sign-in-ascode.html">Use a sign-in code</a>
+                </button>
+            </div>
+            <p class="fp">
+                <a href="https://www.netflix.com/in/LoginHelp">Forgot password?</a>
+            </p>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox-icon">
+                <span>Remember me</span>
+            </div>
+            <p class="NtoN">
+                New to Netflix?
+                <a href="index.html">Sign up now.</a>
+            </p>
+            <div class="description">
+                <div id="description-visible">
+                    This page is protected by Google reCAPTCHA to ensure you're not a bot. <span id="lm">Learn
+                        more.</span>
+                </div>
+                <div id="description-hidden">
+                    The information collected by Google reCAPTCHA is subject to the Google <a
+                        href="https://policies.google.com/privacy">Privacy Policy</a> and <a
+                        href="https://policies.google.com/terms">Terms of Service</a>, and is used for providing,
+                    maintaining, and improving the reCAPTCHA service and for general security purposes (it is not used
+                    for personalised advertising by Google).
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="last">
+        <div class="lastsection-text-call">
+            <p>Questions? Call <u id="number"> 000-800-919-1694</u></p>
+        </div>
+        <div class="lastsection-text-boxes">
+            <div class="lastsection-text-box">
+                <a href="https://help.netflix.com/en/node/412">FAQ</a>
+                <a href="https://help.netflix.com/en/node/124516">Cookie Preferences</a>
+            </div>
+            <div class="lastsection-text-box">
+                <a href="https://help.netflix.com/en">Help Center</a>
+                <a href="https://help.netflix.com/en/node/134094">Corporate Information</a>
+            </div>
+            <div class="lastsection-text-box">
+                <a href="https://help.netflix.com/legal/termsofuse">Terms of Use</a>
+            </div>
+            <div class="lastsection-text-box">
+                <a href="https://help.netflix.com/legal/privacy">Privacy</a>
+            </div>
+        </div>
+        <div class="lastsection-text-btn">
+            <button class="btn">
+                <div class="language-btn">
+                    <img src="assets/image/language-nav.svg" alt="language" class="language-logo">
+                    <select id="lan-select" name="LanguageSelect" data-uia="language-picker-header">
+                        <option lang="en" label="English" value="en-IN" selected="">English</option>
+                        <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+                    </select>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById('lm').addEventListener('click', function () {
+            document.getElementById('description-hidden').style.display = 'block';
+            this.classList.add('hidden');
+        });
+        document.getElementById('number').addEventListener('click', function () {
+            const userResponse = confirm("https://www.netflix.com wants to open this application.");
+            if (userResponse) {
+                alert("User chose to open the application.");
+                // Add logic here to handle the user's acceptance, such as redirecting to the app.
+            } else {
+                alert("User canceled the action.");
+                // Add logic here for when the user cancels the action.
+            }
+        });
+
+        document.querySelector(".btn-si-red").onclick = function () {
+            alert("This operaton is blocked by the authority");
+        };
+    </script>
+</body>
+
+</html>
